@@ -537,6 +537,26 @@ f
     display: block;
     margin: 0 auto 20px;
 }
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #38bdf8;
+}
+.project-card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #38bdf8;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
 </style>
 </head>
 
@@ -856,7 +876,8 @@ f
             <span class="achievement-status">Currently Learning</span>
         </div>
 
-        <div class="skill-card">
+        <div class="project-card">
+            <img src="project-preview.png" alt="Jawad Cyber World Website Preview" class="project-image">
             <h3>Jawad Cyber World</h3>
             <p>
                 Created my own personal portfolio website
